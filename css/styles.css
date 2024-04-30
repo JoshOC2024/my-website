@@ -1,0 +1,54 @@
+/* Sorry if these colors don't follow the accesbility guidelines I was just messing around with the CSS :)*/
+/*Pseudo Selector*/
+:root{
+    background: radial-gradient(ellipse, #0000ff, #ffa500);
+    font-family: sans-serif;
+}
+
+header{
+    border: .1em solid #ffffff;
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    margin-bottom: 2.5%;
+    color: #181870;
+    background-color: #ffa500;
+}
+
+/*Type selector*/
+img{
+    border: .2em solid #ffffff;
+    max-width: 70%;
+    display: block;
+    margin: auto;   
+}
+
+/*Class Selector*/
+#infoBox{
+    margin: 5% 0 0 12%;
+    border: .3em double #ffffff;
+    background-color: #181870;
+    color: #ffffff;
+    padding: 0% 2% 2% 2%;
+    width: 70%;
+}
+
+/*Relational Selector*/
+section h2{
+    margin-top: 2%;
+}
+
+/*Combination Selector*/
+#infoBox ul{
+    color: #ffa500;
+    text-decoration: underline;
+}
+
+footer{
+    margin-top: 5%;
+    border: .4em ridge #ffffff;
+    padding: 2%;
+    text-align: center;
+    background: #ffa500;
+    font-size: 1.2em;
+}
