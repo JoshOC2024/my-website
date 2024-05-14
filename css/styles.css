@@ -1,31 +1,80 @@
-/* Sorry if these colors don't follow the accesbility guidelines I was just messing around with the CSS :)*/
 /*Pseudo Selector*/
-:root{
+:root {
     background: radial-gradient(ellipse, #0000ff, #ffa500);
     font-family: sans-serif;
 }
 
-header{
+header {
     border: .1em solid #ffffff;
     text-align: center;
-    width: 20%;
-    padding-top: 1.4%;
+    width: fill;
+    /*Change this with a media query when the window gets too big*/
     margin: auto;
-    margin-bottom: 2.5%;
+    margin-bottom: 2.5em;
     color: #181870;
     background-color: #ffa500;
 }
 
+body {
+    width: 95%;
+    margin: auto;
+    padding-top: .4em;
+}
+
+/*Start of Navigation section*/
+#navigation {
+    font-family: sans-serif;
+}
+
+#navigation ul {
+    list-style-type: none;
+    padding-left: .8em;
+}
+
+#navigation ul li {
+    float: left;
+    width: 33%;
+}
+
+#navigation ul li a {
+    text-align: center;
+    display: block;
+    /*weird*/
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #181870;
+    color: #ffa500;
+    border: .15em white solid;
+}
+
+#navigation ul li a:hover {
+    background-color: #ffa500;
+    color: #181870;
+}
+
+/*End of navigation section*/
+
+/*Start of Main Section*/
+main {
+    clear: left;
+}
+
 /*Type selector*/
-img{
+img {
     border: .2em solid #ffffff;
     max-width: 70%;
     display: block;
-    margin: auto;   
+    margin: auto;
+}
+
+/*Scalable image section*/
+#imgBox img{
+    width: 100%;
+    max-width: 55%;
 }
 
 /*Class Selector*/
-#infoBox{
+#infoBox {
     margin: 5% 0 0 12%;
     border: .3em double #ffffff;
     background-color: #181870;
@@ -35,7 +84,7 @@ img{
 }
 
 /*Button styling*/
-#infoBox a{
+#infoBox a {
     border: .1em solid #ffa500;
     padding: .8%;
     color: #000000;
@@ -44,17 +93,46 @@ img{
 }
 
 /*Relational Selector*/
-section h2{
+section h2 {
     margin-top: 2%;
 }
 
 /*Combination Selector*/
-#infoBox ul{
+#infoBox ul {
     color: #ffa500;
     text-decoration: underline;
 }
 
-footer{
+/*Start of Readmore.html section*/
+.newsBox {
+    border: .2em solid #000000;
+    background-color: #ffffff;
+    padding: 2%;
+    margin: 2% 10%;
+}
+
+article {
+    column-count: 3;
+    column-gap: 35px;
+    /*change unit to relative*/
+    column-rule: 2px solid #000000;
+    /*change unit to relative*/
+}
+
+.newsBox h1 {
+    font-size: 170%;
+    margin-top: 0;
+    column-span: all;
+}
+
+.newsBox p {
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+/*End of Readmore.html section*/
+
+footer {
     margin-top: 5%;
     border: .4em ridge #ffffff;
     padding: 2%;
@@ -63,3 +141,16 @@ footer{
     font-size: 1.2em;
 }
 
+footer a {
+    margin: .4em;
+}
+
+/* Media query section*/
+@media only screen and (max-width: 610px) {
+    /*Normal code BEFORE*/
+    #navigation ul li{
+        float: left;
+        width: 100%;
+        margin: .2%;
+    }
+}
