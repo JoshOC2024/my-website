@@ -1,4 +1,3 @@
-/*Pseudo Selector*/
 :root {
     background: radial-gradient(ellipse, #0000ff, #ffa500);
     font-family: sans-serif;
@@ -8,7 +7,6 @@ header {
     border: .1em solid #ffffff;
     text-align: center;
     width: fill;
-    /*Change this with a media query when the window gets too big*/
     margin: auto;
     margin-bottom: 2.5em;
     color: #181870;
@@ -20,6 +18,12 @@ body {
     margin: auto;
     padding-top: .4em;
 }
+
+main {
+    clear: left;
+}
+
+
 
 /*Start of Navigation section*/
 #navigation {
@@ -52,14 +56,11 @@ body {
     background-color: #ffa500;
     color: #181870;
 }
-
 /*End of navigation section*/
 
-/*Start of Main Section*/
-main {
-    clear: left;
-}
 
+
+/* Start of index.html section*/
 img {
     border: .2em solid #ffffff;
     max-width: 70%;
@@ -106,6 +107,9 @@ section h2 {
 .infoParts{
     padding: .5em;
 }
+/* End of index.html section*/
+
+
 
 /*Start of teamshop.html*/
 #box1{
@@ -177,6 +181,7 @@ section h2 {
 /*End of teamshop.html*/
 
 
+
 /*Start of Readmore.html section*/
 .newsBox {
     border: .2em solid #000000;
@@ -204,6 +209,9 @@ article {
 
 /*End of Readmore.html section*/
 
+
+
+/*Footer section on every webpage*/
 footer {
     margin-top: 5%;
     border: .4em ridge #ffffff;
@@ -217,8 +225,10 @@ footer a {
     margin: .4em;
 }
 
+
+
 /* Media query section*/
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 610px) { /*1st media query*/
     /*Normal code BEFORE*/
     #navigation ul {
         flex-direction: column;
@@ -246,14 +256,16 @@ footer a {
     }
 }
 
-@media only screen and (max-width: 430px){
+@media only screen and (max-width: 430px){ /*2nd media query*/
     article {
         column-count: 2;
         column-gap: 35px;
     }
 }
 
-@media only screen and (max-width: 365px){
+
+
+@media only screen and (max-width: 365px){ /*3rd media query*/
     #imgBox img{
         min-height: 60%;
     }
