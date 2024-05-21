@@ -23,23 +23,24 @@ body {
 
 /*Start of Navigation section*/
 #navigation {
+    margin: auto;
     font-family: sans-serif;
 }
 
 #navigation ul {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
     padding-left: .8em;
 }
 
 #navigation ul li {
-    float: left;
-    width: 33%;
+    flex-basis: 33%;
 }
 
 #navigation ul li a {
-    text-align: center;
     display: block;
-    /*weird*/
+    text-align: center;
     padding: 1em 0;
     text-decoration: none;
     background-color: #181870;
@@ -59,7 +60,6 @@ main {
     clear: left;
 }
 
-/*Type selector*/
 img {
     border: .2em solid #ffffff;
     max-width: 70%;
@@ -67,13 +67,15 @@ img {
     margin: auto;
 }
 
-/*Scalable image section*/
 #imgBox img{
     width: 100%;
     max-width: 55%;
 }
 
-/*Class Selector*/
+section h2 {
+    margin-top: 2%;
+}
+
 #infoBox {
     margin: 5% 0 0 12%;
     border: .3em double #ffffff;
@@ -83,7 +85,6 @@ img {
     width: 70%;
 }
 
-/*Button styling*/
 #infoBox a {
     border: .1em solid #ffa500;
     padding: .8%;
@@ -92,16 +93,89 @@ img {
     margin: 1.3% 50% 0% 0%;
 }
 
-/*Relational Selector*/
-section h2 {
-    margin-top: 2%;
-}
-
-/*Combination Selector*/
 #infoBox ul {
     color: #ffa500;
-    text-decoration: underline;
 }
+
+.flexInfo{
+    display: flex;
+    flex-direction: row;
+    padding: .5em;
+}
+
+.infoParts{
+    padding: .5em;
+}
+
+/*Start of teamshop.html*/
+#box1{
+    border: .1em solid #000000;
+    background-color: #ffffff;
+    padding: 1em;
+    grid-area: box1;
+}
+#box2{
+    border: .1em solid #000000;
+    background-color: #ffffff;
+    padding: 1em;
+    grid-area: box2;
+}
+#box3{
+    border: .1em solid #000000;
+    background-color: #ffffff;
+    padding: 1em;
+    grid-area: box3;
+}
+#box4{
+    border: .1em solid #000000;
+    background-color: #ffffff;
+    padding: 1em;
+    grid-area: box4;
+}
+#box5{
+    border: .1em solid #000000;
+    background-color: #ffffff;
+    padding: 1em;
+    grid-area: box5;
+}
+#box6{
+    border: .1em solid #000000;
+    background-color: #ffffff;
+    padding: 1em;
+    grid-area: box6;
+}
+#box7{
+    border: .1em solid #000000;
+    background-color: #ffffff;
+    padding: 1em;
+    grid-area: box7;
+}
+#box8{
+    border: .1em solid #000000;
+    background-color: #ffffff;
+    padding: 1em;
+    grid-area: box8;
+}
+#box9{
+    border: .1em solid #000000;
+    background-color: #ffffff;
+    padding: 1em;
+    grid-area: box9;
+}
+.contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: .5em;
+    column-gap: .5em;
+    grid-template-areas: 
+    "box1 box2 box3"
+    "box4 box5 box6"
+    "box7 box8 box9";
+}
+
+/*End of teamshop.html*/
+
 
 /*Start of Readmore.html section*/
 .newsBox {
@@ -114,9 +188,7 @@ section h2 {
 article {
     column-count: 3;
     column-gap: 35px;
-    /*change unit to relative*/
-    column-rule: 2px solid #000000;
-    /*change unit to relative*/
+    column-rule: 2px solid #000000; 
 }
 
 .newsBox h1 {
@@ -148,9 +220,62 @@ footer a {
 /* Media query section*/
 @media only screen and (max-width: 610px) {
     /*Normal code BEFORE*/
+    #navigation ul {
+        flex-direction: column;
+    }
+
     #navigation ul li{
         float: left;
         width: 100%;
         margin: .2%;
+    }
+    .flexInfo{
+        flex-direction: column;
+    }
+
+    /*This is for the grid layout on the teamshop.html*/
+    .contain{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "box1 box2"
+        "box3 box4"
+        "box5 box6"
+        "box7 box8"
+        "box9 box9";
+    }
+}
+
+@media only screen and (max-width: 430px){
+    article {
+        column-count: 2;
+        column-gap: 35px;
+    }
+}
+
+@media only screen and (max-width: 365px){
+    #imgBox img{
+        min-height: 60%;
+    }
+    article {
+        column-count: 1;
+        column-gap: 35px;
+
+    }
+
+    .contain{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr) ;
+        grid-template-areas: 
+        "box1" 
+        "box2"
+        "box3" 
+        "box4"
+        "box5"
+        "box6"
+        "box7"
+        "box8"
+        "box9"
+        "box9";
     }
 }
