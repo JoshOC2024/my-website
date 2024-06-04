@@ -24,7 +24,6 @@ main {
 }
 
 
-
 /*Start of Navigation section*/
 #navigation {
     margin: auto;
@@ -56,11 +55,12 @@ main {
     background-color: #ffa500;
     color: #181870;
 }
+
 /*End of navigation section*/
 
 
 /*Title format for every page*/
-.title{
+.title {
     border: solid #ffffff;
     text-align: center;
     width: 30%;
@@ -78,7 +78,7 @@ img {
     margin: auto;
 }
 
-#imgBox img{
+#imgBox img {
     width: 100%;
     max-width: 55%;
 }
@@ -108,21 +108,66 @@ section h2 {
     color: #ffa500;
 }
 
-.flexInfo{
+.flexInfo {
     display: flex;
     flex-direction: row;
     padding: .5em;
 }
 
-.infoParts{
+.infoParts {
     padding: .5em;
 }
 /* End of index.html section*/
 
-
+/*Start of schedule.html*/
+.standardInfo{
+    margin: 5% 0 0 12%;
+    border: .3em double #ffffff;
+    background-color: #181870;
+    color: #ffffff;
+    padding: 0% 2% 2% 2%;
+    width: 70%;
+}
+caption{
+    color: #ffffff;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 1px solid #1D2228;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  td, th {
+    padding: 5px 5px;
+    border: 2.5px solid #1D2228;
+  }
+  tr:nth-of-type(even) {
+    background-color: #ffa500;
+  }
+  tr:nth-of-type(odd) {
+    background-color: #ffffff;
+  }
+  caption {
+    margin: 1em;
+    font-weight: bold;
+    font-size: 120%;
+  }
+  tr:hover {
+    background-color: #1D2228;
+    color: #fff;
+  }
+  th {
+    background-color: #1D2228;
+    color: #fff;
+  
+  }
+/*End of schedule.html*/
 
 /*Start of teamshop.html*/
-#textBox{
+#textBox {
     margin: auto;
     margin-top: 2.5%;
     width: 75%;
@@ -132,77 +177,86 @@ section h2 {
     padding: .25em 1em .25em 1em;
 }
 
-#box1{
+#box1 {
     border: .1em solid #000000;
     background-color: #ffffff;
     padding: 1em;
     grid-area: box1;
 }
-#box2{
+
+#box2 {
     border: .1em solid #000000;
     background-color: #ffffff;
     padding: 1em;
     grid-area: box2;
 }
-#box3{
+
+#box3 {
     border: .1em solid #000000;
     background-color: #ffffff;
     padding: 1em;
     grid-area: box3;
 }
-#box4{
+
+#box4 {
     border: .1em solid #000000;
     background-color: #ffffff;
     padding: 1em;
     grid-area: box4;
 }
-#box5{
+
+#box5 {
     border: .1em solid #000000;
     background-color: #ffffff;
     padding: 1em;
     grid-area: box5;
 }
-#box6{
+
+#box6 {
     border: .1em solid #000000;
     background-color: #ffffff;
     padding: 1em;
     grid-area: box6;
 }
-#box7{
+
+#box7 {
     border: .1em solid #000000;
     background-color: #ffffff;
     padding: 1em;
     grid-area: box7;
 }
-#box8{
+
+#box8 {
     border: .1em solid #000000;
     background-color: #ffffff;
     padding: 1em;
     grid-area: box8;
 }
-#box9{
+
+#box9 {
     border: .1em solid #000000;
     background-color: #ffffff;
     padding: 1em;
     grid-area: box9;
 }
-.contain{
+
+.contain {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: .5em;
     column-gap: .5em;
-    grid-template-areas: 
-    "box1 box2 box3"
-    "box4 box5 box6"
-    "box7 box8 box9";
+    grid-template-areas:
+        "box1 box2 box3"
+        "box4 box5 box6"
+        "box7 box8 box9";
 }
 
 /*End of teamshop.html*/
 
 
 
-/*Start of Readmore.html section*/
+/*Start of aboutus.html section*/
 .newsBox {
     border: .2em solid #000000;
     background-color: #ffffff;
@@ -213,7 +267,7 @@ section h2 {
 article {
     column-count: 3;
     column-gap: 35px;
-    column-rule: 2px solid #000000; 
+    column-rule: 2px solid #000000;
 }
 
 .newsBox h1 {
@@ -225,13 +279,13 @@ article {
 .newsBox p {
     margin-top: 0;
     margin-bottom: .5em;
+    /*Google fonts*/
+    font-family: "Newsreader", serif;
 }
-
-/*End of Readmore.html section*/
+/*End of aboutus.html section*/
 
 /*Start of ContactUs.html*/
-
-.contactInfo{
+.contactInfo {
     display: flex;
     border: .1em solid #ffffff;
     background-color: #181870;
@@ -242,11 +296,12 @@ article {
     margin-top: 5%;
 }
 
-#contactImg{
+#contactImg {
     margin: auto;
     max-width: 75%;
     margin-top: 2em;
 }
+
 /*End of ContactUs.html*/
 
 /*Footer section on every webpage*/
@@ -263,40 +318,51 @@ footer a {
     margin: .4em;
 }
 
+.icons {
+    margin-bottom: .5em;
+    color: #181870;
+    font-size: 25px;
+}
+
 
 
 /* Media query section*/
-@media only screen and (max-width: 610px) { /*1st media query*/
+@media only screen and (max-width: 610px) {
+
+    /*1st media query*/
     /*Normal code BEFORE*/
     #navigation ul {
         flex-direction: column;
     }
 
-    #navigation ul li{
+    #navigation ul li {
         float: left;
         width: 100%;
         margin: .2%;
     }
-    .flexInfo{
+
+    .flexInfo {
         flex-direction: column;
     }
 
     /*This is for the grid layout on the teamshop.html*/
-    .contain{
+    .contain {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "box1 box2"
-        "box3 box4"
-        "box5 box6"
-        "box7 box8"
-        "box9 box9";
+        grid-template-areas:
+            "box1 box2"
+            "box3 box4"
+            "box5 box6"
+            "box7 box8"
+            "box9 box10";
     }
 }
 
 
 
-@media only screen and (max-width: 430px){ /*2nd media query*/
+@media only screen and (max-width: 430px) {
+
+    /*2nd media query*/
     article {
         column-count: 2;
         column-gap: 35px;
@@ -305,29 +371,31 @@ footer a {
 
 
 
-@media only screen and (max-width: 365px){ /*3rd media query*/
-    #imgBox img{
+@media only screen and (max-width: 365px) {
+
+    /*3rd media query*/
+    #imgBox img {
         min-height: 60%;
     }
+
     article {
         column-count: 1;
         column-gap: 35px;
 
     }
 
-    .contain{
+    .contain {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(1fr) ;
-        grid-template-areas: 
-        "box1" 
-        "box2"
-        "box3" 
-        "box4"
-        "box5"
-        "box6"
-        "box7"
-        "box8"
-        "box9"
-        "box9";
+        grid-template-rows: repeat(1fr);
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5"
+            "box6"
+            "box7"
+            "box8"
+            "box9";
     }
 }

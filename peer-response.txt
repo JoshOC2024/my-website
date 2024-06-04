@@ -1,0 +1,13 @@
+Peer Feedback:
+- On your home page, the "Read More" link is broken.
+
+- When your tiles on the team shop page go down to 2 to a row, 
+  the calendar taking up the whole space on the bottom feels a little 
+  out of place or like it would be a featured item. You could play 
+  around with either a blank space to the left of the final item or an 
+  additional box with purchase info or "more coming soon", so that 
+  everything lines up. 
+
+Fixes:
+- I fixed the 'Read More' button by changing the link.
+- I added an empty box so the calendar doesn't take up two spots when the browser is under 610px. 
