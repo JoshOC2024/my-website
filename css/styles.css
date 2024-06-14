@@ -1,22 +1,23 @@
 :root {
-    background: radial-gradient(ellipse, #0000ff, #ffa500);
+    /*background: radial-gradient(ellipse, #0000ff, #ffa500);*/
     font-family: sans-serif;
-}
-
-header {
-    border: .1em solid #ffffff;
-    text-align: center;
-    width: fill;
-    margin: auto;
-    margin-bottom: 2.5em;
-    color: #181870;
-    background-color: #ffa500;
+    background-color: #c2c2c2;
 }
 
 body {
-    width: 95%;
+    /*width: 95%;*/
     margin: auto;
-    padding-top: .4em;
+    /*padding-top: .4em;*/
+}
+
+header {
+    border: .2em solid #ffa500;
+    width: fill;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2em;
+    color: #ffa500;
+    background-color: #003366;
 }
 
 main {
@@ -26,7 +27,7 @@ main {
 
 /*Start of Navigation section*/
 #navigation {
-    margin: auto;
+    margin: 0em 1.0em 0em 0em;
     font-family: sans-serif;
 }
 
@@ -46,14 +47,15 @@ main {
     text-align: center;
     padding: 1em 0;
     text-decoration: none;
-    background-color: #181870;
+    background-color: #003366;
     color: #ffa500;
+    margin: .5%;
     border: .15em white solid;
 }
 
 #navigation ul li a:hover {
     background-color: #ffa500;
-    color: #181870;
+    color: #003366;
 }
 
 /*End of navigation section*/
@@ -61,18 +63,19 @@ main {
 
 /*Title format for every page*/
 .title {
-    border: solid #ffffff;
+    border: .2em solid #ffa500;
     text-align: center;
     width: 30%;
+    min-width: 9em;
     margin: 2em auto;
-    margin-bottom: .5em;
-    color: #ffa500;
-    background-color: #181870;
+    /*margin-bottom: .5em;*/
+    color: #ffffff;
+    background-color: #003366;
 }
 
 /* Start of index.html section*/
 img {
-    border: .2em solid #ffffff;
+    border: .2em solid #ffa500;
     max-width: 70%;
     display: block;
     margin: auto;
@@ -80,7 +83,7 @@ img {
 
 #imgBox img {
     width: 100%;
-    max-width: 55%;
+    max-width: 45%;
 }
 
 section h2 {
@@ -89,8 +92,8 @@ section h2 {
 
 #infoBox {
     margin: 5% 0 0 12%;
-    border: .3em double #ffffff;
-    background-color: #181870;
+    border: .3em double #ffa500;
+    background-color: #003366;
     color: #ffffff;
     padding: 0% 2% 2% 2%;
     width: 70%;
@@ -121,9 +124,9 @@ section h2 {
 
 /*Start of schedule.html*/
 .standardInfo{
-    margin: 5% 0 0 12%;
-    border: .3em double #ffffff;
-    background-color: #181870;
+    margin: 2.5% 0 2.5% 12%;
+    border: .3em double #ffa500;
+    background-color: #003366;
     color: #ffffff;
     padding: 0% 2% 2% 2%;
     width: 70%;
@@ -135,14 +138,14 @@ table {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    border: 1px solid #1D2228;
+    border: 1px solid #003366;
     border-collapse: collapse;
     margin-bottom: 1em;
     text-align: center;
   }
   td, th {
     padding: 5px 5px;
-    border: 2.5px solid #1D2228;
+    border: 2.5px solid #003366;
   }
   tr:nth-of-type(even) {
     background-color: #ffa500;
@@ -156,11 +159,11 @@ table {
     font-size: 120%;
   }
   tr:hover {
-    background-color: #1D2228;
+    background-color: #003366;
     color: #fff;
   }
   th {
-    background-color: #1D2228;
+    background-color: #003366;
     color: #fff;
   
   }
@@ -171,9 +174,9 @@ table {
     margin: auto;
     margin-top: 2.5%;
     width: 75%;
-    background-color: #181870;
+    background-color: #003366;
     color: #ffffff;
-    border: .1em solid #ffffff;
+    border: .3em double #ffa500;
     padding: .25em 1em .25em 1em;
 }
 
@@ -242,6 +245,8 @@ table {
 
 .contain {
     display: grid;
+    max-width: 80%;
+    margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: .5em;
@@ -253,8 +258,6 @@ table {
 }
 
 /*End of teamshop.html*/
-
-
 
 /*Start of aboutus.html section*/
 .newsBox {
@@ -287,42 +290,46 @@ article {
 /*Start of ContactUs.html*/
 .contactInfo {
     display: flex;
-    border: .1em solid #ffffff;
-    background-color: #181870;
+    border: .3em double #ffa500;
+    background-color: #003366;
     color: #ffffff;
     padding: 0% 2% 1% 2%;
     width: 75%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 2.5%;
 }
 
 #contactImg {
     margin: auto;
-    max-width: 75%;
+    max-width: 60em;
     margin-top: 2em;
 }
-
 /*End of ContactUs.html*/
 
-/*Footer section on every webpage*/
+/* Start of Footer */
 footer {
-    margin: 5% 1% .5% 1%;
-    border: .4em ridge #ffffff;
-    padding: 1%;
+    border: .2em solid #ffa500;
+    margin: auto;
+    margin-top: 5%;
+    color: #ffffff;
+    padding: .5%;
     text-align: center;
-    background: #ffa500;
+    background: #003366;
     font-size: 1.2em;
 }
 
 footer a {
     margin: .4em;
+    color: #ffa500;
 }
 
 .icons {
     margin-bottom: .5em;
-    color: #181870;
+    color: #ffa500;
     font-size: 25px;
+    padding: 0em 1em;
 }
+/* End of Footer */
 
 
 
@@ -330,7 +337,6 @@ footer a {
 @media only screen and (max-width: 610px) {
 
     /*1st media query*/
-    /*Normal code BEFORE*/
     #navigation ul {
         flex-direction: column;
     }
@@ -343,6 +349,10 @@ footer a {
 
     .flexInfo {
         flex-direction: column;
+    }
+
+    footer {
+        padding-bottom: 1%;
     }
 
     /*This is for the grid layout on the teamshop.html*/
@@ -360,7 +370,7 @@ footer a {
 
 
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 490px) {
 
     /*2nd media query*/
     article {
@@ -375,13 +385,17 @@ footer a {
 
     /*3rd media query*/
     #imgBox img {
-        min-height: 60%;
+        min-width: 70%;
     }
 
     article {
         column-count: 1;
         column-gap: 35px;
 
+    }
+
+    #contactImg img{
+        min-width: 70%;
     }
 
     .contain {
