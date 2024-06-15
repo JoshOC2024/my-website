@@ -9,7 +9,6 @@ body {
 
 header {
     border: .2em solid #ffa500;
-    width: fill;
     margin: auto;
     text-align: center;
     margin-bottom: 2em;
@@ -117,14 +116,6 @@ section h2 {
 /* End of index.html section*/
 
 /*Start of schedule.html*/
-.standardInfo{
-    margin: 2.5% 0 2.5% 12%;
-    border: .3em double #ffa500;
-    background-color: #003366;
-    color: #ffffff;
-    padding: 0% 2% 2% 2%;
-    width: 70%;
-}
 caption{
     color: #ffffff;
 }
@@ -392,7 +383,7 @@ footer a {
 
     .contain {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(1fr);
+        grid-template-rows: 1fr;
         grid-template-areas:
             "box1"
             "box2"
